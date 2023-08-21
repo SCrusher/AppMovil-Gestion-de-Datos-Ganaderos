@@ -1,0 +1,30 @@
+@api = http://localhost:3000/marca
+
+###OBTIENE TODOS LOS DATOS
+GET {{api}}
+
+### INGRESA NUEVOS REGISTROS
+POST {{api}}
+Content-Type: application/json
+
+{
+    "tipo" : "ternera"
+}
+
+### OBTIENE DATO POR ID
+GET {{api}}/1020
+
+### ELIMINA DATO
+DELETE {{api}}/1021
+
+### CONTABILIZA TOTAL DATOS EN TABLA
+GET {{api}}/count
+
+
+### ACTUALIZA POR ID
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "tipo": "torito"
+}

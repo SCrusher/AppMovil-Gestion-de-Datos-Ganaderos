@@ -1,0 +1,36 @@
+@api = http://localhost:3000/lectura
+
+###OBTENER TODOS LOS REGISTROS
+GET {{api}}
+
+###OBTENER POR ID
+GET {{api}}/8
+
+###CONTEO DE DATOS TOTALES EN TABLA
+GET {{api}}/count
+
+###INSERTAR
+POST {{api}}
+Content-Type: application/json
+
+{
+    "arete" : "123",
+    "fecha" : "09-07-2023",
+    "marca" : "2",
+    "corral" : "23",
+    "rup" : "103010700"
+}
+
+###ELIMINAR
+DELETE {{api}}/9
+
+###ACTUALIZAR
+PUT {{api}}/35
+Content-Type: application/json
+
+{
+    "arete" : "222222222",
+    "marca" : "8",
+    "corral" : "6",
+    "rup" : "103010700"
+}
